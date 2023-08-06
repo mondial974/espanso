@@ -1,0 +1,39 @@
+####################################################
+# Raccourci utilisable pour la rédaction des emails
+####################################################
+
+matches:
+
+  # Insert objet d'un mail de type : date - affaire - [mot cle] -
+  - trigger: ";om"
+    replace: "{{zettelID}} - {{form1.affaire}} - {{form1.mot_cle}} - " 
+    vars: 
+      - name: zettelID
+        type: date
+        params:
+          format: "%y%m%d_%H%M%S"
+
+      - name: "form1"
+        type: form
+        params: 
+          layout: "Affaire : [[affaire]] \nMot clé : [[mot_cle]]"
+          fields: 
+            affaire:
+              type: list
+              values:
+                - Le Chatel
+                - Wood Hotel
+                - Auguste Lacaussade
+            mot_cle:
+              type: list
+              values:
+                - '[LIVRABLE]'
+                - '[DEMANDE]'
+                - '[INFORMATION]'
+                - '[DECISION]'
+                - '[ACTION]'
+                - '[DEVIS]'
+  
+  # Formule de politesse\?
+  - trigger: ";cd"
+    replace: "Cordialement"
