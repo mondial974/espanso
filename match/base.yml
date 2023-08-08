@@ -23,7 +23,7 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%m%d%Y"
+          format: "%m/%d/%Y"
 
   # Print the output of a shell command
   - trigger: ":shell"
@@ -36,7 +36,7 @@ matches:
 
   # And much more! For more information, visit the docs: https://espanso.org/docs/
 
-  - trigger: ";idu"
+  - trigger: ":uid"
     replace: "{{zettelID}}"
     vars:
       - name: zettelID
@@ -46,7 +46,7 @@ matches:
   
 
   
-  - trigger: ";aff"
+  - trigger: ":aff"
     replace: "{{output}}"
     vars: 
       - name: output
@@ -58,7 +58,7 @@ matches:
             - "- Céline"
             - "- Ascenseur Auguste Lacaussade"
   
-  - trigger: ";te"
+  - trigger: ":te"
     replace: "{{output}}"
     vars: 
       - name: output
@@ -72,17 +72,17 @@ matches:
             - "- [ACTION] - "
             - "- [DEVIS] - "
   
-  - trigger: ";r0"
+  - trigger: ":r0"
     replace: "RDC"
   
-  - trigger: ";r1"
+  - trigger: ":r1"
     replace: "R+1"
   
-  - trigger: ";r2"
+  - trigger: ":r2"
     replace: "R+2"
   
-  - trigger: ";r3"
+  - trigger: ":r3"
     replace: "R+3"
   
-  - trigger: ";r4"
+  - trigger: ":r4"
     replace: "R+4"
