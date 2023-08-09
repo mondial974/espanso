@@ -24,6 +24,7 @@ matches:
                 - Le Chatel
                 - Wood Hotel
                 - Auguste Lacaussade
+                - Carribus Mur 22
             mot_cle:
               type: list
               values:
