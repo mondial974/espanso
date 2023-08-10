@@ -5,7 +5,7 @@
 matches:
 
   # Insert objet d'un mail de type : date - affaire - [mot cle] -
-  - trigger: ":o"
+  - trigger: ";o"
     replace: "{{zettelID}} - {{form1.affaire}} - {{form1.mot_cle}} - " 
     vars: 
       - name: zettelID
@@ -35,6 +35,6 @@ matches:
                 - '[ACTION]'
                 - '[DEVIS]'
   
-  # Formule de politesse\?
-  - trigger: ":cd"
+  # Formule de politesse
+  - trigger: ";cd"
     replace: "Cordialement"

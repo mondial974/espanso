@@ -5,39 +5,39 @@
 matches:  
   
   # Insert le texte : <<cunette<<
-  - trigger: ":<cun"
+  - trigger: ";<cun"
     replace: "<<cunette<<"
   
   # Insert le texte : >>cunette>>
-  - trigger: ":>cun"
+  - trigger: ";>cun"
     replace: ">>cunette>>"
 
   # Insert le texte : goutte d'eau
-  - trigger: ":gto"
+  - trigger: ";gto"
     replace: "goutte d'eau"
   
   # Insert le texte : sol souple 1 cm
-  - trigger: ":ss1"
+  - trigger: ";ss1"
     replace: "sol souple 1 cm"
   
   # Insert le texte : carrelage collé 1 cm
-  - trigger: ":cc1"
+  - trigger: ";cc1"
     replace: "carrelage collé 1 cm"
   
   # Insert le texte : carrelage collé 2 cm
-  - trigger: ":cc2"
+  - trigger: ";cc2"
     replace: "carrelage collé 2 cm"
 
   # Insert le texte : carrelage scellé 7 cm
-  - trigger: ":cs7"
+  - trigger: ";cs7"
     replace: "carrelage scellé 7 cm"
   
   # Insert le symbole Ø
-  - trigger: ":fi"
+  - trigger: ";fi"
     replace: "Ø"
 
   # Insert date de révision
-  - trigger: ":rdate"
+  - trigger: ";rev"
     replace: "{{mydate}}"
     vars:
       - name: mydate
