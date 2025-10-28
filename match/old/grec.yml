@@ -1,0 +1,97 @@
+####################################################
+# Raccourci permettant d'insérer les lettres grecs #
+####################################################
+
+# a     alpha     α   a
+# b     beta      β   b
+# c     khi       χ   c
+# d     delta     δ   d
+# e     epsilon   ε   e
+# f     fi        ϕ   fi
+# f     phi       φ   phi
+# g     gamma     γ   g
+# h
+# i     eta       η   i
+# j
+# k     kappa
+# l     lamda     λ   l
+# m     mu        μ   m
+# n     nu        ν   n
+# o     omega     ω   o
+# p     pi        π   pi
+# ps    psi       ψ   psi
+# q
+# r     rho       ρ   r
+# s     sigma     σ   s
+# t     tau       τ   t
+# th    teta      θ   th
+# u
+# v
+# w
+# x     xi        ξ
+# y     upsilon   υ
+# z     zeta      ζ
+
+# matches:
+#   - trigger: ";;a"
+#     replace: "α"
+
+#   - trigger: ";;b"
+#     replace: "β"
+
+#   - trigger: ";;c"
+#     replace: "χ"
+
+#   - trigger: ";;d"
+#     replace: "δ"
+
+#   - trigger: ";;e"
+#     replace: "ε"
+
+#   - trigger: ";;fi"
+#     replace: "Ø"
+
+#   - trigger: ";;phi"
+#     replace: "φ"
+
+#   - trigger: ";;g"
+#     replace: "γ"
+
+#   - trigger: ";;h"
+#     replace: "η"
+
+#   - trigger: ";;i"
+#     replace: "ι"
+
+#   - trigger: ";;l"
+#     replace: "λ"
+
+#   - trigger: ";;m"
+#     replace: "μ"
+
+#   - trigger: ";;n"
+#     replace: "ν"
+
+#   - trigger: ";;o"
+#     replace: "ω"
+
+#   - trigger: ";;pi"
+#     replace: "π"
+
+#   - trigger: ";;psi"
+#     replace: "ψ"
+
+#   - trigger: ";;r"
+#     replace: "ρ"
+
+#   - trigger: ";;s"
+#     replace: "σ"
+
+#   - trigger: ";;to"
+#     replace: "τ"
+
+#   - trigger: ";;th"
+#     replace: "θ"
+
+#   - trigger: ";infini"
+#     replace: "∞"

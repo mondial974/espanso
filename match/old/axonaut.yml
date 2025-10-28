@@ -1,0 +1,16 @@
+#####################################
+# Raccourci utilisable dans AXONAUT #
+#####################################
+
+# matches:  
+
+  # Insert le nota sur les bons de livraison
+  # - trigger: ";bl"
+  #   replace: |
+  #             NB : tirage noir et blanc 
+  #             CO : tirage couleur 
+  #             En l'absence de remarques dans les 15 jours à compter de la date de livraison, ces documents seront considérés comme approuvés sans réserves.
+
+  # # Insert le texte : PLAN EXE
+  # - trigger: ";pe"
+  #   replace: "PLAN EXE"

@@ -1,0 +1,96 @@
+# imports:
+# - 'C:\Users\jfont\AppData\Roaming\espanso\match\globals_vars.yml'
+
+##########################################################
+# Raccourci utilisable dans VSCODE pour gérer mes tâches #
+##########################################################
+
+# matches:
+# Insert le tag retour à la ligne HTML </br>
+# - trigger: ";br"
+#   replace: "</br>"
+
+# Insert la commande \newline pour les codes latex
+# - trigger: ";nl"
+#   replace: '\newline'
+
+# Insert la commande \hline pour les codes latex
+# - trigger: ";hl"
+#   replace: '\hline'
+
+# Insert le nom d'un projet
+# - trigger: ";pro"
+#   replace: "**{{Formulaire_Projet.projet}}**"
+
+# Insert un préfix un ordre du jour pour mon système GTD
+# - trigger: ";odj"
+#   replace: "**{{Formulaire_Contact.contact}} {{Formulaire_Projet.projet}}**"
+
+# Renommer une image
+# - trigger: ";renimg"
+#   replace: "image_{{uid}}"
+
+# Insert un préfix en attente pour mon système GTD
+# - trigger: ";ea"
+#   replace: "**{{Formulaire_Contact.contact}} - {{Formulaire_Projet.projet}} - {{form.jour}}/{{form.mois}}/{{form.annee}}**"
+#   vars:
+#     - name: "form"
+#       type: form
+#       params:
+#         layout: "Jour : [[jour]] Mois : [[mois]] Année : [[annee]]"
+#         fields:
+#           jour:
+#             type: list
+#             values:
+#               - "01"
+#               - "02"
+#               - "03"
+#               - "04"
+#               - "05"
+#               - "06"
+#               - "07"
+#               - "08"
+#               - "09"
+#               - "10"
+#               - "11"
+#               - "12"
+#               - "13"
+#               - "14"
+#               - "15"
+#               - "16"
+#               - "17"
+#               - "18"
+#               - "19"
+#               - "20"
+#               - "21"
+#               - "22"
+#               - "23"
+#               - "24"
+#               - "25"
+#               - "26"
+#               - "27"
+#               - "28"
+#               - "29"
+#               - "30"
+#               - "31"
+#           mois:
+#             type: list
+#             values:
+#               - "01"
+#               - "02"
+#               - "03"
+#               - "04"
+#               - "05"
+#               - "06"
+#               - "07"
+#               - "08"
+#               - "09"
+#               - "10"
+#               - "11"
+#               - "12"
+#           annee:
+#             type: list
+#             values:
+#               - "23"
+#               - "24"
+#               - "25"

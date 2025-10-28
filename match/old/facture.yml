@@ -1,0 +1,134 @@
+################################################################
+# Raccourci utilisable pour renommer les factures fournisseurs #
+################################################################
+
+# matches:
+
+  # Insert une commande permettant de renommer une facture
+  # - trigger: ";rnfa"
+  #   replace: 'ren "{{input}}.pdf" "{{form.annee}}{{form.mois}}_{{form.fournisseur}}_{{input}}.pdf"'
+  #   vars:
+  #     - name: "input"
+  #       type: "clipboard"
+        
+  #     - name: "form"
+  #       type: form
+  #       params: 
+  #         layout: "Année : [[annee]] Mois [[mois]] Fournisseur : [[fournisseur]]"
+  #         fields: 
+  #           annee:
+  #             type: list
+  #             values:
+  #               - "23"
+  #               - "24"
+  #               - "25"
+  #           mois:
+  #             type: list
+  #             values:
+  #               - "01"
+  #               - "02"
+  #               - "03"
+  #               - "04"
+  #               - "05"
+  #               - "06"
+  #               - "07"
+  #               - "08"
+  #               - "09"
+  #               - "10"
+  #               - "11"
+  #               - "12"
+  #           fournisseur:
+  #             type: list
+  #             values:
+  #               - AGICAP
+  #               - ALLIANZ_MRP
+  #               - ALLIANZ_RCD
+  #               - ALLIANZ_RC
+  #               - AMAZON
+  #               - AU_BUREAU
+  #               - AXONAUT
+  #               - ATELIER_808
+  #               - BRASSERIE_PAUL_PORTAIL
+  #               - BUREAU_VALLEE
+  #               - BURO
+  #               - CIPAV
+  #               - COOP_UNION
+  #               - CONTRAVENTION
+  #               - EDF
+  #               - EYROLLES
+  #               - ESPACE_CULTUREL_LECLERC
+  #               - "FILE_SIDE"
+  #               - GREFFE
+  #               - GRENKE
+  #               - IO_BURO
+  #               - IP_FIX
+  #               - IMPOTS
+  #               - LA_POSTE
+  #               - LE_REPROGRAPHE
+  #               - LE_CARE
+  #               - LE_BERTEL_DES_LAVES
+  #               - LEASECAR
+  #               - MICROSOFT_OFFICE_365
+  #               - MICROSOFT_SAUVEGARDE_DRIVE
+  #               - MUTUELLE_GENERALE                
+  #               - ORANGE_INTERNET
+  #               - ORANGE_MOBILE
+  #               - OVH_HEBERGEMENT
+  #               - OVH_NOM_DOMAINE
+  #               - PROJECT_REPRO
+  #               - RINGOVER
+  #               - RELAI_DU_PORTAIL
+  #               - RUNEO
+  #               - SAM_BUREAUTIQUE
+  #               - STATION_TOTAL
+  #               - STATION_ENGEN
+  #               - STATION_OLA
+  #               - SUD_DIAZO
+  #               - SCI_INFRASTUDIO
+  #               - URSSAF
+
+  # Insert une commande permettant de renommer les relevés de compte
+  # - trigger: ";rb"
+  #   replace: 'ren "{{input}}.pdf" "relevé compte {{form.compte}} {{form.annee}}{{form.mois}}_{{form.date}}.pdf"'
+  #   vars:
+  #     - name: "input"
+  #       type: "clipboard"
+ 
+  #     - name: "form"
+  #       type: form
+  #       params: 
+  #         layout: "Compte : [[compte]] Année : [[annee]] Mois : [[mois]] Date : [[date]]"
+  #         fields: 
+  #           compte:
+  #             type: list
+  #             values:
+  #               - "INFRABAT 291"
+  #               - "INFRABAT 292"
+  #               - "INFRASTUDIO 291"
+  #           annee:
+  #             type: list
+  #             values:
+  #               - "23"
+  #               - "24"
+  #               - "25"
+  #           mois:
+  #             type: list
+  #             values:
+  #               - "01"
+  #               - "02"
+  #               - "03"
+  #               - "04"
+  #               - "05"
+  #               - "06"
+  #               - "07"
+  #               - "08"
+  #               - "09"
+  #               - "10"
+  #               - "11"
+  #               - "12"
+  #           date:
+  #             type: list
+  #             values:
+  #               - "10"
+  #               - "20"
+  #               - "30"

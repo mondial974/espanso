@@ -1,4 +1,5 @@
 # Available matches
+
 | Trigger     | Replace   |
 |-------------|-----------|
 | :Alpha:     | Α         |

@@ -1,0 +1,44 @@
+###################################
+# Raccourci pour protéger les PDF #
+###################################
+
+matches:
+  # 1 minute
+  - trigger: ";tl01"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "05_livrable" -et "in 1 minute"'
+
+  # 5 jours
+  - trigger: ";tl5"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "05_livrable" -et "in 6 days"'
+
+  # 10 jours
+  - trigger: ";tl10"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "10_livrable" -et "in 11 days"'
+
+  # 15 jours
+  - trigger: ";tl15"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "15_livrable" -et "in 16 days"'
+
+  # 30 jours (1 mois)
+  - trigger: ";tl30"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "30_livrable" -et "in 31 days"'
+
+  # 45 jours (1 mois et demi)
+  - trigger: ";tl45"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "45_livrable" -et "in 46 days"'
+
+  # 60 jours (2 mois)
+  - trigger: ";tl60"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "60_livrable" -et "in 61 days"'
+
+  # 75 jours (2 mois et demi)
+  - trigger: ";tl75"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "75_livrable" -et "in 76 days"'
+
+  # 90 jours (3 mois)
+  - trigger: ";tl90"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "90_livrable" -et "in 91 days"'
+
+  # 800 jours (6 mois)
+  - trigger: ";tl6m"
+    replace: 'TimeLimitPDF.exe -d ./ -pf "180_livrable" -et "in 181 days"'

@@ -1,0 +1,9 @@
+#####################################################
+# Raccourci utilisable pour la rédaction des emails #
+#####################################################
+
+# matches: 
+
+#   # 
+#   - trigger: ";py"
+#     replace: "Pierre-Yves"

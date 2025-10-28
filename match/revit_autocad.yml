@@ -1,0 +1,177 @@
+###################################
+# Raccourci utilisable dans REVIT #
+###################################
+
+matches:
+  #   # Insert la commande carnet1
+  #   - trigger: ";ca1"
+  #     replace: "carnet"
+
+  #   # Insert la commande carnet2
+  #   - trigger: ";ca2"
+  #     replace: "carnet2"
+
+  #   # Insert le mot : Élévation
+  #   - trigger: ";el"
+  #     replace: "Élévation "
+
+  #   # Insert le mot : Coupe
+  #   - trigger: ";cp"
+  #     replace: "Coupe "
+
+  #   # Insert le texte : Vue en plan
+  #   - trigger: ";vp"
+  #     replace: "Vue en plan "
+
+  #   # Insert le mot : Détail
+  #   - trigger: ";dt"
+  #     replace: "Détail "
+
+  #   # Insert le texte : TS suivant élévation
+  #   - trigger: ";tsel"
+  #     replace: "TS suivant\nélévation"
+
+  #   # Insert le texte : TS suivant vue en plan
+  #   - trigger: ";tsvp"
+  #     replace: "TS suivant\nvue en plan"
+
+  #   # Insert le texte : passage sous poutre
+  #   - trigger: ";pm"
+  #     replace: "±"
+
+  #   # Insert le texte : passage sous poutre
+  #   - trigger: ";psp"
+  #     replace: "passage sous poutre"
+
+  #   # Insert le texte : Ferraillage voile
+  #   - trigger: ";fv"
+  #     replace: "Ferraillage voile"
+
+  #   # Insert le texte : Ferraillage dalle
+  #   - trigger: ";fd"
+  #     replace: "Ferraillage dalle"
+
+  #   # Insert le texte : <<cunette<<
+  #   - trigger: ";<cun"
+  #     replace: "<<cunette<<"
+
+  #   # Insert le texte : >>cunette>>
+  #   - trigger: ";>cun"
+  #     replace: ">>cunette>>"
+
+  #   # Insert le texte : goutte d'eau
+  #   - trigger: ";gto"
+  #     replace: "goutte d'eau"
+
+  #   # Inert le texte : sol souple 1 cm
+  #   - trigger: ";ss1"
+  #     replace: "sol souple 1 cm"
+
+  #   # Insert le texte : carrelage collé 1 cm
+  #   - trigger: ";cc1"
+  #     replace: "carrelage collé 1 cm"
+
+  #   # Insert le texte : carrelage collé 2 cm
+  #   - trigger: ";cc2"
+  #     replace: "carrelage collé 2 cm"
+
+  #   # Insert le texte : carrelage scellé 7 cm
+  #   - trigger: ";cs7"
+  #     replace: "carrelage scellé 7 cm"
+
+  #   # Insert le texte : A confirmer par MOE
+  #   - trigger: ";acmoe"
+  #     replace: "À confirmer par MOE"
+
+  #   # Insert le texte : Première diffusion
+  #   - trigger: ";pd"
+  #     replace: "Première diffusion"
+
+  - trigger: ";fn"
+    # Insert un nom de fichier à partir d'un formulaire
+    replace: "{{Formulaire_Projet.projet}} GO{{form1.cent}}{{form1.dix}} ind {{form1.indice}} {{form1.niveau}} {{form1.objet}} {{uid}}"
+    vars:
+      - name: "form1"
+        type: form
+        params:
+          layout: "Plan cent : [[cent]] Plan dix : [[dix]] Indice : [[indice]] Niveau : [[niveau]] Objet : [[objet]]"
+          fields:
+            cent:
+              type: list
+              values:
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "NH"
+                - ""
+            dix:
+              type: list
+              values:
+                - "00"
+                - "01"
+                - "02"
+                - "03"
+                - "04"
+                - "05"
+                - "06"
+                - "07"
+                - "08"
+                - "09"
+                - "10"
+                - ""
+            indice:
+              type: list
+              values:
+                - "PROVISOIRE"
+                - "0"
+                - "A"
+                - "B"
+                - "C"
+                - "D"
+                - "E"
+                - "F"
+                - ""
+            niveau:
+              type: list
+              values:
+                - "Note d'hypothèse générale"
+                - "Bassin de rétention"
+                - "Fondation"
+                - "PH R-1"
+                - "PH RDC"
+                - "PH R+1"
+                - "PH R+2"
+                - "PH R+3"
+                - "PH R+4"
+                - "PH R+5"
+                - "PH R+6"
+                - "Escalier"
+                - "Escaliers"
+                - "Local transformateur"
+                - "Suivi PEO GO et VISA MOE"
+            objet:
+              type: list
+              values:
+                - "Coffrage Vue en plan"
+                - "Coffrage Vue en plan Coupes"
+                - "Coffrage Vue en plan Détails"
+                - "Coffrage Vue en plan Coupes Détails"
+                - "Coffrage Coupes"
+                - "Coffrage Détails"
+                - "Coffrage Coupes Détails"
+                - "---"
+                - "Armatures"
+                - "Armatures Élévations"
+                - "Armatures Poutres"
+                - "Armatures Dalles lit inférieur"
+                - "Armatures Dalles lit supérieur"
+                - "---"
+                - "Coffrage Armatures"
+                - "---"
+                - ""

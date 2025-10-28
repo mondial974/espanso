@@ -1,0 +1,82 @@
+# Définition de variables globales :
+# - Liste de projet
+# - Liste de contact
+
+global_vars:
+  - name: "Formulaire_Projet"
+    type: form
+    params:
+      layout: "Projet : [[projet]]"
+      fields:
+        projet:
+          type: list
+          values:
+            - "ADMINISTRATIF"
+            - "DEVIS"
+            - "FACTURATIONS"
+            - "COMPTA"
+            - "FINANCE"
+            - "PRODUCTION"
+            - "Divers Perso"
+            - "---"
+            - "Changer de voiture"
+            - "Changer de comptable"
+            - "Résilier Ringover"
+            - "Obtenir CB Boursorama"
+            - "Obtenir CB BFB"
+            - "KYU Binance"
+            - ""
+            - "ACCORD CADRE MOE INFRASTRUCTURE"
+            - "AUVENT CADRE DE VIE"
+            - "CLINIQUE HORUS"
+            - "CRÈCHE ALAMANDA"
+            - "CRÈCHE OCÉAN"
+            - "CRÈCHE LES ORCHIDÉES"
+            - "CELINE"
+            - "FIBRES AUVENT CHARIOT"
+            - "LM PACK"
+            - "PLATEAU K2"
+            - "RIVIERE DU MAT"
+            - "ROSE DES SABLES"
+            - "ROCHE MARINE"
+            - "VILLA PLATEAU CAILLOUX"
+            - "WOOD HOTEL"
+            - "---"
+            - Renouvellement CNI
+            - Changement d'adresse
+            - CHATEL
+            - Villa Guillemard
+
+  - name: "Formulaire_Contact"
+    type: form
+    params:
+      layout: "Contact : [[contact]]"
+      fields:
+        contact:
+          type: list
+          values:
+            - "Conseiller LBP"
+            - "Maxime Triolet"
+            - "Maman"
+            - "Max Motais"
+            - "Pierre Yves Cornet"
+            - "Hubert Noiret"
+
+  - name: "Formulaire_Entreprise"
+    type: form
+    params:
+      layout: "Entreprise : [[entreprise]]"
+      fields:
+        entreprise:
+          type: list
+          values:
+            - "COLAS"
+            - "GTOI"
+            - "MAROI"
+            - "MDPROBTP"
+            - "RTB"
+
+  - name: uid
+    type: date
+    params:
+      format: "%y%m%d_%H%M%S"

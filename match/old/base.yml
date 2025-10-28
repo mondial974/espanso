@@ -7,10 +7,10 @@
 
 # Matches are substitution rules: when you type the "trigger" string
 # it gets replaced by the "replace" string.
-matches:
+# matches:
   # Simple text replacement
-  - trigger: ":espanso"
-    replace: "Hi there!"
+  # - trigger: ":espanso"
+  #   replace: "Hi there!"
 
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
@@ -24,6 +24,8 @@ matches:
   #       type: date
   #       params:
   #         format: "%m/%d/%Y"
+
+
 
   # Print the output of a shell command
   # - trigger: ":shell"

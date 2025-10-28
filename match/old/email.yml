@@ -1,0 +1,50 @@
+#####################################################
+# Raccourci utilisable pour la rédaction des emails #
+#####################################################
+
+# matches: 
+
+  # Insert objet d'un mail de type : date - affaire - [mot cle] -
+  # Utilise globals_vars.yml
+  # - trigger: ";obj"
+  #   replace: "{{uid}} - {{Formulaire_Projet.projet}} - {{form1.mot_cle}} - " 
+  #   vars: 
+  #     - name: "form1"
+  #       type: form
+  #       params: 
+  #         layout: "Mot clé : [[mot_cle]]"
+  #         fields: 
+  #           mot_cle:
+  #             type: list
+  #             values:
+  #               - "[LIVRABLE]"
+  #               - "[DEMANDE]"
+  #               - "[INFORMATION]"
+  #               - "[DECISION]"
+  #               - "[ACTION]"
+  #               - "[DEVIS]"
+
+  # Formule de politesse
+  #- trigger: ";cd"
+  #  replace: "Cordialement"
+
+  # Ci-joint
+  # - trigger: ";cj"
+  #   replace: "Ci-joint"
+
+  # Insert mon adresse mail j.fontaine@infrabat-ingenierie.fr
+  # - trigger: ";eml1"
+  #   replace: "j.fontaine@infrabat-ingenierie.fr"
+
+  # Insert mon adresse mail fontainejerome974@gmail.com
+  # - trigger: ";eml2"
+  #   replace: "fontainejerome974@gmail.com"
+
+  # Insert une réponse automatique pour les assurances demandant un devis de travaux
+  # - trigger: ";emlerror1"
+  #   replace: |
+  #             Bonjour,
+
+  #             Il y a une erreur de destinataire, en effet nous sommes un BET structure situé à l’ile de la Réunion et non une entreprise de travaux.
+
+  #             Cordialement
